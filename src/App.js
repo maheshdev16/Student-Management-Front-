@@ -6,7 +6,7 @@ import EditStudent from "./components/EditStudent";
 
 function App() {
   return (
-    <Router>
+   
       <div className="container">
         <h2>🎓 Student Management System</h2>
         <nav>
@@ -19,7 +19,7 @@ function App() {
           <Route path="/edit/:id" element={<EditStudent />} />
         </Routes>
       </div>
-    </Router>
+   
   );
 }
 
