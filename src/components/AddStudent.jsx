@@ -10,7 +10,7 @@ function AddStudent() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/students", form);
+    await axios.post("https://student-management-f705.onrender.com/students", form);
     navigate("/");
   };
 

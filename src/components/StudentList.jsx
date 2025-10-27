@@ -6,12 +6,12 @@ function StudentList() {
   const [students, setStudents] = useState([]);
 
   const fetchData = async () => {
-    const res = await axios.get("http://localhost:5000/students");
+    const res = await axios.get("https://student-management-f705.onrender.com/students");
     setStudents(res.data);
   };
 
   const deleteStudent = async (id) => {
-    await axios.delete(`http://localhost:5000/students/${id}`);
+    await axios.delete(`https://student-management-f705.onrender.com/students/${id}`);
     fetchData();
   };
 
